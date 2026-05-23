@@ -14,15 +14,13 @@ CONFIG = {
     "min_df": 2,
     "max_df": 0.95,
     "sublinear_tf": True,
-    "analyzer": "word",
-    "token_pattern": r"(?u)\b\w+\b",
     "output_dir": "data/processed",
     "vectorizer_path": "models/tfidf_vectorizer.pkl",
 }
 
 
 def split_data(df: pd.DataFrame, config: dict = CONFIG):
-    X = df["text"]
+    X = df["clean_text"]
     y = df["label"]
     X_train, X_test, y_train, y_test = train_test_split(
         X, y,
@@ -40,8 +38,9 @@ def build_tfidf_features(X_train, X_test, config: dict = CONFIG):
         min_df=config["min_df"],
         max_df=config["max_df"],
         sublinear_tf=config["sublinear_tf"],
-        analyzer=config["analyzer"],
-        token_pattern=config["token_pattern"],
+        tokenizer=str.split,
+        preprocessor=None,
+        token_pattern=None
     )
     X_train_tfidf = vectorizer.fit_transform(X_train)
     X_test_tfidf  = vectorizer.transform(X_test)
