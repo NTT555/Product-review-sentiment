@@ -1,0 +1,20 @@
+# Xử lý dữ liệu dạng bảng và ma trận
+pandas
+numpy
+
+# Xử lý ngôn ngữ tự nhiên (NLP)
+underthesea
+
+# Học máy và Kỹ thuật đặc trưng (TF-IDF, Naive Bayes, Đánh giá)
+scikit-learn
+
+# Xử lý dữ liệu mất cân bằng (SMOTE)
+imbalanced-learn
+
+# Trực quan hóa dữ liệu (Vẽ biểu đồ phân bố, Confusion Matrix)
+matplotlib
+seaborn
+
+# Môi trường chạy file Notebook (.ipynb) trên VS Code
+notebook
+ipykernel
