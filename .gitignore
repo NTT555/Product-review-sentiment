@@ -1,6 +1,3 @@
-# Bỏ qua thư mục dữ liệu (Rất quan trọng để không push file CSV nặng lên Git)
-data/
-
 # Bỏ qua các file cache hệ thống của Python và Jupyter Notebook
 __pycache__/
 *.pyc
