@@ -9,7 +9,6 @@ def main():
     print("🚀 BẮT ĐẦU PIPELINE HUẤN LUYỆN LẠI MÔ HÌNH\n")
     
     # 1. Đọc dữ liệu đã gán nhãn thủ công
-    # LƯU Ý: Điều chỉnh lại đúng tên file và định dạng thực tế (.xlsx hoặc .csv) trong thư mục của bạn
     data_path = 'data/raw/labeled_comments.xlsx' 
     df = load_data(data_path)
     
@@ -41,7 +40,7 @@ def main():
         "Sản phẩm dùng cực kỳ mượt, giao hàng siêu nhanh, 10 điểm!",
         "Mới xài 2 ngày đã hỏng, quá tệ, sẽ không bao giờ mua lại.",
         "Dùng cũng tạm ổn nhưng pin hơi nhanh hết, giá này thì chấp nhận được.",
-        "Sản phẩm không hề tốt"
+        "Sản phẩm không hề tốt",
     ]
     
     clean_test = [clean_text(c) for c in test_comments]

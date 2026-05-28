@@ -1,9 +1,18 @@
-# Bỏ qua các file cache hệ thống của Python và Jupyter Notebook
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-
-# Bỏ qua môi trường ảo (nếu sau này nhóm có dùng)
+# Môi trường ảo Python 
 venv/
+.venv/
 env/
-.env
+
+# Các file tạm của Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Các file dữ liệu
+# data/raw/
+# *.csv
+# *.xlsx
+
+# File cấu hình ẩn của VS Code, Jupyter
+.vscode/
+.ipynb_checkpoints/
