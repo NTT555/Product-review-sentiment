@@ -40,7 +40,7 @@ def main():
         "Sản phẩm dùng cực kỳ mượt, giao hàng siêu nhanh, 10 điểm!",
         "Mới xài 2 ngày đã hỏng, quá tệ, sẽ không bao giờ mua lại.",
         "Dùng cũng tạm ổn nhưng pin hơi nhanh hết, giá này thì chấp nhận được.",
-        "Sản phẩm không hề tốt",
+        "Sản phẩm tệ",
     ]
     
     clean_test = [clean_text(c) for c in test_comments]
